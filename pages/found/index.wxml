@@ -1,0 +1,11 @@
+<view class="section">
+  <view class='search-box'>
+  <view class="{{active ? 'search-bar focus' : 'search-bar'}}">
+    <icon type="search" size="24"/>
+    <input bindfocus='onFocus' bindblur='onBlur' placeholder='请输入关键字' bindconfirm='onSearch' confirm-type='search' bindinput="onChange"/>
+  </view>
+  </view>
+  <view>
+    <card lists='{{props.productStore.getSearch}}' binddetailevent='goDetail' />
+  </view>
+</view>

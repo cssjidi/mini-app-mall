@@ -1,0 +1,24 @@
+<!--components/list/list.wxml-->
+<view class='card-box'>
+  <view wx:for='{{lists}}' wx:key='id'>
+    <view bindtap='onTap' class='card' data-id='{{item.id}}'>
+      <view class='image'>
+        <image mode='aspectFit' src='{{item.small_images.string[0]}}' alt='{{item.title}}'></image>
+      </view>
+      <view class='info'>
+        <view class='title'>{{item.title}}</view>
+        <view class='desc'>
+          <view class='price not-price'>
+          现价：{{item.zk_final_price}}
+          </view>
+          <view class='price'>
+          券后价:￥<label>{{item.coupon_price}}</label>
+          </view>
+          <view class='real-price'>
+          <label>券</label>{{item.coupon_minus}}元
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

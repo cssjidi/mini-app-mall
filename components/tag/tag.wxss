@@ -1,0 +1,16 @@
+/* components/tag/tag.wxss */
+.tag-box{
+  white-space: nowrap;
+  height: 70rpx;
+  line-height: 70rpx;
+  width: 100%;
+  background-color: #eee;
+}
+.tag{
+  display:inline-block;
+  margin:0 20rpx;
+  font-size:28rpx;
+}
+.actived{
+  color:#1296db;
+}

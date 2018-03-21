@@ -1,0 +1,10 @@
+<!--components/list/list.wxml-->
+<view class='list'>
+  <view wx:for='{{source}}' wx:key='id' class='list-item' bindtap='onTap'>
+      <view class='image'><image src='{{item.icon}}'/></view>
+      <view class='title'>
+        {{item.title}}
+      </view>
+      <view class='arrow-right'></view>
+  </view>
+</view>

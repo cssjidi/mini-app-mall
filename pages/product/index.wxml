@@ -1,0 +1,11 @@
+<template name="noProduct">
+    <view class="title-box">
+        暂无产品
+    </view>
+</template>
+
+<template name="hasProduct">
+  <view>
+    <list lists='{{props.productStore.getProducts}}'/>
+  </view>
+</template>

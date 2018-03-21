@@ -1,0 +1,6 @@
+<!--components/tag/tag.wxml-->
+<view class="tag-box">
+  <block wx:for="{{tags}}" wx:key="id">
+    <view class='tag {{item.id === currentType ? "actived" : ""}}' data-id='{{item.id}}' bindtap='onTap'>{{item.name}}</view>
+  </block>
+</view>

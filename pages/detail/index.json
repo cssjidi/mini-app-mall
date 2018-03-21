@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "详细信息",
+  "usingComponents": {
+    "tag": "../../components/tag/tag",
+    "card": "../../components/card/card"
+  }
+}

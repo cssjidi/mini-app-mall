@@ -1,0 +1,24 @@
+<!--pages/detail/index.wxml-->
+<view class='detail-container'>
+  <view class='image'>
+    <image mode='widthFix' style='width:100%;' src='{{props.productStore.getDetail.pict_url}}'></image>
+  </view>
+  <view class='desc'>
+    <view class='title'>
+    {{props.productStore.getDetail.title}}
+    </view>
+    <view class='coupon-price'>
+      券后价：￥<view class='s'>{{props.productStore.getDetail.coupon_price}}</view>
+    </view>
+    <view class='price'>现价：￥{{props.productStore.getDetail.zk_final_price}}</view>
+    <view class='sales'>
+      剩余券：{{props.productStore.getDetail.coupon_remain_count}}张
+    </view>
+  </view>
+  <view>
+      <card lists='{{props.productStore.getRecommends}}' />
+  </view>
+  <view class='btn-box'>
+    <button class='btn' type='primary' data-id='{{props.productStore.getDetail.tbpwd}}' bindtap='copy'>复制淘口令</button>
+  </view>
+</view>

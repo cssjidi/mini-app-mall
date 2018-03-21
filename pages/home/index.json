@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "tag": "../../components/tag/tag",
+    "card": "../../components/card/card"
+  }
+}

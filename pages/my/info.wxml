@@ -1,0 +1,17 @@
+<!--start.wxml-->
+<view class="container">
+  <view class="remind-box" wx:if="{{remind}}">
+    <image class="remind-img" mode='aspectFit' src="/images/more/loading.gif"></image>
+  </view>
+  <block wx:else>
+    <view class="content">
+      <view class="user-info">
+        <image class="logo" mode='aspectFit' src="{{userInfo.avatarUrl}}"></image>
+        <view class='welcome'>欢迎您：{{userInfo.nickName}}</view>
+      </view>
+      <view class="list-container">
+          <list source='{{source}}' binddetailevent='goDetail' />
+      </view>
+    </view>
+  </block>
+</view>

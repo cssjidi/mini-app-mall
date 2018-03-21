@@ -1,0 +1,41 @@
+/* pages/detail/index.wxss */
+.detail-container{
+  width:100%;
+  min-height:100%;
+  font-size:32rpx;
+}
+.image{
+  width:100%;
+  height:500rpx;
+  overflow: hidden;
+}
+.desc{
+  padding:0 30rpx 20rpx;
+  margin-bottom:30rpx;
+  border-bottom:1px solid #ccc;
+}
+.title{
+  font-size:44rpx;
+  margin: 20rpx 0;
+}
+.coupon-price .s{
+  display: inline-block;
+  font-size:40rpx;
+  color:#f00;
+}
+.price{
+  text-decoration: line-through;
+}
+.sales{
+  text-align:right;
+  font-size:32rpx
+}
+.btn-box{
+  height:120rpx;
+}
+.btn{
+  position: fixed;
+  bottom:0;
+  width:100%;
+  border-radius: 0 !important;
+}
